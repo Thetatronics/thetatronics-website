@@ -1,0 +1,320 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+	<link rel=stylesheet href="style.css" type="text/css">
+	<head>
+		<meta name="google-site-verification" content="xhgHbeG16FVhZcxI1oWuBWihBEIiwc2xqOBZcOeQV5s" />
+		<!--
+			 ******************************************************************************
+			 *  Written by hand as I have implemented several embedded web servers myself *
+			 *  and find that the most efficient solutions usually use simple raw html    *
+			 *                                                                            *
+			 *   Thank you for spending the time looking at this  :-)                     *
+			 ******************************************************************************
+		-->
+
+	<title>Thetatronics Ltd.</title>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	  <script type="text/javascript">
+
+		function showDiv(divID, isVisible)
+		{
+			var item = document.getElementById(divID);
+			if (item)
+			{
+				item.className = (isVisible == true) ? 'unhidden' : 'hidden';
+			}
+		}
+
+		function hideAll()
+		{
+			showDiv('skills', false);
+			showDiv('projects', false);
+			showDiv('contact', false);
+			showDiv('home', false);
+			showDiv('gdpr', false);
+		}
+
+	  </script>
+    <script>
+        window.onload = function() {
+            // Reset the form fields when the page loads
+            document.getElementById("form").reset();
+        };
+    </script>
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:IsMyDocuments msdt:dt="string">1</mso:IsMyDocuments>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-224543145-1">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-224543145-1');
+</script>
+
+</head>
+
+	<body>
+		<div id="page-background"><!--<img src="images/background1.jpg" width="100%" background="white">--></div>
+
+		<div id="content">
+
+			<table>
+				<tr>
+					<td>
+						<img src="images/logo-180.png">
+					</td>
+					<td>
+						<a class="maintitle">THETATR&Theta;NICS LTD</a><p>
+						<a class="strapline">&nbsp;Embedded Design Consultancy providing solutions worldwide</a><p>
+						<a class="verysmallline">Registered in England and Wales, No. 10043680 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; VAT Number: GB 236332523</a>
+					</td>
+				</tr>
+			</table>
+
+			<ul class="menubar">
+			<li class="menubar"><a  class="menubar"href="javascript:hideAll();showDiv('home',true);">Home</a>&nbsp;</li>
+			<li class="menubar"><a  class="menubar"href="javascript:hideAll();showDiv('skills',true);">Skills</a>&nbsp;</li>
+			<li class="menubar"><a  class="menubar"href="javascript:hideAll();showDiv('projects',true);">Projects</a>&nbsp;</li>
+			<li class="menubar"><a  class="menubar"href="javascript:hideAll();showDiv('contact',true);">Contact</a>&nbsp;</li>
+			<li class="menubar"><a  class="menubar"href="javascript:hideAll();showDiv('gdpr',true);">GDPR Privacy Policy</a>&nbsp;</li>
+			</ul>
+			<br>
+
+			<div id="home" class="unhidden">
+			<a class="infolinewhite"><br>&nbsp;&nbsp;Specialists in the following areas</a><p>
+				<div class="homebox">
+					<table>
+						<tr><td>&nbsp;</td></tr>
+						<tr><td>
+							<ul class="tick"> <a class="listline">
+							<li>Embedded Software Design</li>
+							<li>IoT Development</li>
+							<li>Embedded Linux</li>
+							<li>Microcontroller Design & Implementation</li>
+							<li>Protocol Design (RS232/485, CANbus, TCP/IP, I2C, SPI)</li>
+							<li>Bootloaders (inc. U-Boot &amp; Barebox)</li>
+							<li>Digital Hardware Debug & Board Bring-up</li>
+							<li>Digital TV (STB, DVR, IDTV)</li>
+							</a>
+							</ul>
+							</td>
+						</tr>
+					</table>
+				  <br>
+					<table>
+						<tr>
+							<td><a class="detailslinewhitesmaller">&nbsp;&nbsp;If you have a project you can't resource, or don't have the requisite skills, Thetatronics may be able to help<br>&nbsp;&nbsp;We can provide fixed price quotes or hourly rates for longer projects.&nbsp;&nbsp;</a><br><br>&nbsp;&nbsp;
+								<a class="detailslinewhitesmaller" href="javascript:hideAll();showDiv('contact',true);"><b>Contact us</b></a>
+								<a class="detailslinewhitesmaller"> today to discuss your requirements</a>
+							</td>
+						</tr>
+					</table>
+					<br>
+				</div>
+				<p><br>
+			</div>
+
+			<div id="skills" class="hidden">
+				<a class="infolinewhite"><br>&nbsp;&nbsp;Skills Summary</a><p>
+				<div class="skillsbox">
+					<a class="aboutline">
+						<table cellspacing="0" cellpadding="20" border="1">
+							<tr>
+								<td>Programming Languages:</td>
+								<td>C, C++, Assembler, Python, Javascript, Lua, TCL/Expect, vbScript, bash</td>
+							</tr>
+							<tr>
+								<td>Processors, DSPs & Microcontrollers:</td>
+								<td>TI Sitara AM335x (aka Beaglebone Black) inc. PRU-ICSS, Raspberry Pi (Zero/2/3/CM3), STM32Fxxx (ARM Cortex-M4), PIC16/18/24/32/dsPIC30F, Atmel ATTiny10, Atmel SAME54, Freescale Kinetis K21 (ARM Cortex-A8), Qualcom QCA9558, 68000, Z80, 8051, 68332, TI DSP TMS320C54xx, 6805, Hitach H8</td>
+							</tr>
+							<tr>
+								<td>Media Processors:</td>
+								<td>Broadcom BCM723x, Toshiba Donau TC90400, ST 51xx/71xx, ST40 & Freeman Series</td>
+							</tr>
+							<tr>
+								<td>OS Development Experience:</td>
+								<td>Linux, FreeRTOS, uCOS-II & uCOS-III, OS20/21 (ST), OSE, Home Grown RTOS's</td>
+							</tr>
+							<tr>
+								<td>Protocols and Interfaces:</td>
+								<td>CANBus, TCP/IP, RS232/422/485, SPI, I2C, SNMP, One-Wire, LoRa, MQTT</td>
+							</tr>
+							<tr>
+								<td align="top">Industry Experience:</td>
+								<td>
+									<b>DVB</b><hr>
+									Set Top Box Middleware Development<br>
+									DVR Development<br>
+									Single Chip IDTV Development<br><br>
+
+									<b>IoT</b><hr>
+									eScooter Control Board<br>
+									Wireless Battery Monitoring<br>
+									WiFi Inspection cameras<br>
+									Power Transmission Line Monitoring<br>
+									Smarthome Gateway<br>
+									WiFi Access Point Geolocation Development<br><br>
+
+									<b>Mobile Communications</b><hr>
+									WiFi Geolocation<br>
+									RF Geolocation<br>
+									3G Basestation Amplifier Control<br>
+									Personal Mobile Radio (PMR) & Basestation<br><br>
+
+									<b>Security & Access Control</b><hr>
+									Smartcard (Contact & Contactless)<br>
+									Biometrics<br><br>
+
+									<b>Automotive</b><hr>
+									Vehicle Brake Testers<br>
+									Exhaust Gas Analysers<br>
+									Production Test Equipment<br><br>
+
+									<b>I.T.</b><hr>
+									Hard Disk production test equipment<br>
+								</td>
+							</tr>
+						</table>
+					</a>
+					<br>
+				</div>
+				<p><br>
+			</div>
+
+	    <div id="projects" class="hidden">
+				<a class="infolinewhite"><br>&nbsp;&nbsp;Recent Projects</a><p>
+				<div class="skillsbox">
+					<a class="aboutline">
+						<table cellspacing="0" cellpadding="20" border="1">
+							<tr>
+								<td>Feed Pump IoT monitoring system</td>
+								<td>Pump monitoring system using STM32WB55 (Bluetooth) and xDot LoRa radio transmitter.  Data was regularly sampled, stored, and periodically sent to Azure via a LoRa connection to a LoRa Gateway (Multitech LoRa to Cellular bridge)</td>
+							</tr>
+                            <tr>
+                                <td>Engineering Data Logger</td>
+                                <td>IoT Data logger for a well-known vacuum cleaner company to allow them to evaluate various sensor technologies.  Used STM32 as the main processor with ESP32-C3 for the WiFi/Azure link</td>
+                            </tr>
+                            <tr>
+                                <td>Wireless Detonation Device</td>
+                                <td>Creating a wireless detonator device for military/professional use.  Using STM32 and XBee radio in transmitter, and XBee only in receivers.  Used microPython on the XBee receiver modules and AT Command mode on the transmitters</td>
+                            </tr>
+                            <tr>
+                                <td>SmartHome Hub </td>
+                                <td>A Raspberry PI CM3+ based solution for a client.  Responsible for the hardware selection and development of the custom Linux distribution (using Yocto) and RF Test software</td>
+                            </tr>
+                            <tr>
+                                <td>IoT Wireless power line monitoring </td>
+                                <td>A proof-of-concept solution that Involved taking environmental sensor data, 4K camera image, ultrasonic and RF emissions sensor data at regular intervals.  Data was stored locally and transmitted via LoRa to a cellular gateway for eventual upload to a Cloud Based analytics package.  Used a BeagleBone Black Industrial for the Ultrasonic (PRU-ICSS), data formatting, camera image and SD card storage.  Used a PyCom WiPy for small sensor readings, GPS time/positional information and low power management and the MultiTech mDot for LoRa communications</td>
+                            </tr>
+                            <tr>
+                                <td>Automotive CANbus Interface</td>
+                                <td>Developed an automotive CANbus analyser and product updater that connects over USB and BLE (using Microchip dsPIC30F6012A and BM71 Bluetooth Module).  Unit replaced an earlier USB only version that I also developed.  Was responsible for selecting the board level processor, Bluetooth module and external memory.  Developed a secure bootloader and the main application code as well as supporting PC based applications.  Mobile app development was handled by a third-party vendor using the API that I developed</td>
+                            </tr>
+                            <tr>
+                                <td>GPS GeoFencing Product</td>
+                                <td>An automotive GPS Geofencing product, using the Microchip PIC18F46K22.  This device tracked the location of a vehicle within a geofenced area and gave alerts or actively controlled vehicle speed when crossing geofence boundaries.  Developed the bootloader and skeleton demonstration application to my client who then wrote the main application. Also wrote a PC Tray application to connect to the device and download new firmware and geofences when connected to the PC.</td>
+                            </tr>
+                            <tr>
+                                <td>Wireless Battery Monitor Router/Access Point</td>
+                                <td>Implemented wireless monitoring of intelligent battery monitors (fork lift truck).  Involved wireless scanning and downloading of data over a proprietary wireless link, implementation of web-based configuration management pages, firmware update and secure data upload to an external FTP site using TI AM335x processor (aka Beaglebone)</td>
+                            </tr>
+                            <tr>
+                                <td>School Science Lab Controller</td>
+                                <td>Using PIC24HJ256, updated existing design to add an SDHC interface, EEPROM driver/abstraction layer and implement a bootloader/firmware update mechanism</td>
+                            </tr>
+						</table>
+					</a>
+					<br>
+				</div>
+				<p><br>
+	    </div>
+
+			<div id="contact" class="hidden">
+				<a class="infolinewhite"><br>&nbsp;&nbsp;Registered Office</a><p>
+
+				<div class="contactbox">
+					<table>
+						<tr>
+							<td  width="85%">
+								<a class="aboutline">
+								<br>34 Boulevard
+								<br>Weston-super-mare
+								<br>Somerset
+								<br>BS23 1NF
+								<br>UNITED KINGDOM
+								<br><br>
+								Tel/Fax: +44 (0) 1278 457409<br>
+								<br>Email: <a class="infolinewhite" align="left" href="mailto:info@thetatronics.com?subject=Enquiry%20from%20website">info@thetatronics.com</a>
+								<br>
+							</td>
+						</tr>
+					</table>
+					<br>
+				</div>
+				<p><br>
+				<div class="absolute">
+					<a class="infolinewhite">Contact Us</a><p>
+					<div class="form-container">
+                        <form action="https://api.web3forms.com/submit" method="POST" id="reused_form">
+                          <a class="aboutline">
+                              <input type="hidden" name="access_key" value="16515217-d240-4c5a-9d3b-b3661fde072d">
+                              <label>Your Name:</label>
+                              <input type="text" name="name" required><p>
+                              <label><a class="aboutline">Email Address:</label>
+                              <input type="email" name="email" required><p>
+                              <label>Message:</label>
+                              <textarea name="message" rows="10" maxlength="6000"  required></textarea><p>
+                              <button  class="button" type="submit">Send Message</button>
+                          </a>
+                        </form>
+						<div id="success_message" style="display:none">
+							<a class="aboutline">Your message has been sent, we will reply soon<br><br>
+							Many thanks for contacting Thetatronics Ltd, <br>we look forward to working with you.</a>
+						</div>
+						<div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
+					</div>
+				</div>
+				<br><br>
+		   </div>
+
+
+
+			<div id="gdpr" class="hidden">
+			  <a class="infolinewhite"><br>&nbsp;&nbsp;GDPR Privacy Policy</a><p>
+			  <div class="gdprouterbox">
+				<br><a class="detailslinewhite">25th May 2018<br></a><br>
+						   <div class="gdprbox">
+						   <a class="detailslinewhitesmaller">
+						   Due to the new General Data Protection Regulations (GDPR) which comes into effect from 25th May 2018, we are required to inform you of the data we hold
+						   for your organisation and how your data is handled and stored. This is to ensure we are compliant with the new regulations.  We will not share your company
+						   details with third parties or use them for marketing purposes.  No personal information is stored on our systems.<br><br>
+
+						  For the purposes of our trading relationship with your organisation we hold the following commercial information securely.  <br><br>
+
+						  &bull;    Company name, Address, Telephone numbers<br>
+						  &bull;    Email addresses, Employee names <br>
+						  &bull;    Bank details (not in all cases)<br>
+						  &bull;    Trading & Credit Checking (if applicable)<br>
+						  &bull;    Email contents, documents and files pertaining to project work undertaken by the company (if applicable)<br><br><p>
+
+						  If you wish us to remove your information, then please email <a class="infolinewhite" align="left" href="mailto:accounts@thetatronics.com?subject=GDPR%20Details%20Removal&amp;body=Please%20can%20you%20remove%20my%20details%20from%20your%20system...">accounts@thetatronics.com</a>
+
+							</div>
+				<p>
+			  </div><br>
+			</div>
+
+
+	<a class="verysmallline">&copy; Thetatronics Ltd 2016-2026</a>
+	<p><br>
+	</body>
+</html>
+
